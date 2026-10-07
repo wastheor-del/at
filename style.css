@@ -1,0 +1,69 @@
+/* Reset básico e fonte */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Fundo com preenchimento total e gradiente sutil de vermelho */
+body {
+    min-height: 100vh;
+    background: radial-gradient(circle, #a10f0f 0%, #730303 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 20px;
+}
+
+/* Título */
+h1 {
+    font-size: 24px;
+    margin-bottom: 25px;/* Afasta o título do saldo */
+}
+
+/* Saldo */
+#saldo {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 18px;
+    margin-bottom: 35px;/* Espaço maior antes de começar os campos */
+}
+
+/* Inputs (Campos de texto) */
+input {
+    width: 100%;
+    max-width: 300px;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    text-align: center;
+    outline: none;
+    margin-bottom: 12px;/* Espaço curto até o botão logo abaixo */
+}
+
+button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 24px;
+    font-size: 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px; /* Espaço maior para separar do próximo bloco de input */
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+/* Efeitos nos botões */
+button:hover {
+    background-color: #45a049;
+}
+
+button:active {
+    transform: scale(0.97);
+}

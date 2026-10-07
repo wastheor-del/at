@@ -1,0 +1,262 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sens-serif;
+  color: #1f2937;
+  background-color: #ffffff;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 0.5rem;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 0;
+}
+
+.section--bg-gray {
+  background-color: #f3f4f6;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3.007518797rem;
+  color: #1f2937;
+}
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+  }
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 5%;
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+.header__link {
+  font-size: 1.8rem;
+  font-weight: 800;
+  text-decoration: none;
+  color: #2563eb;
+}
+.header__highlight {
+  color: #2563eb;
+}
+
+.nav__list {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+@media (max-width: 768px) {
+  .nav__list {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+}
+.nav__link {
+  text-decoration: none;
+  color: #f3f4f6;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+.nav__link:hover {
+  color: #2563eb;
+}
+
+.hero {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(rgba(31, 41, 55, 0.8), rgba(31, 41, 55, 0.9)), url("https://placehold.co/1920x1080") center/cover;
+  color: white;
+  padding: 2rem;
+}
+.hero__title {
+  font-size: 3.5rem;
+  margin: 1rem;
+  max-width: 800px;
+}
+@media (max-width: 768px) {
+  .hero__title {
+    font-size: 2.5rem;
+  }
+}
+.hero__text {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.about {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
+}
+@media (max-width: 992px) {
+  .about {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+.about__content, .about__image-wrapper {
+  flex: 1;
+}
+
+.contact__wrapper {
+  display: flex;
+  gap: 4rem;
+  padding: 4rem 0;
+}
+@media (max-width: 992px) {
+  .contact__wrapper {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+.contact__info {
+  flex: 1;
+}
+.contact__title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.contact__list {
+  list-style: none;
+  margin-top: 2rem;
+}
+.contact__item {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+.contact__form-wrapper {
+  flex: 1;
+  background-color: #ffffff;
+  padding: 2.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.footer {
+  background-color: #1f2937;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+.btn--primary {
+  background-color: #2563eb;
+  color: white;
+}
+.btn--primary:hover {
+  background-color: #1e40af;
+}
+
+.services__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.service-card {
+  background-color: #ffffff;
+  padding: 2.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s;
+}
+.service-card:hover {
+  transform: translateY(-5px);
+}
+.service-card__title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #2563eb;
+}
+
+.testimonials__grid {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .testimonials__grid {
+    flex-direction: column;
+  }
+}
+
+.testimonial-card {
+  flex: 1;
+  background-color: #f3f4f6;
+  padding: 2rem;
+  border-left: 4px solid #2563eb;
+  font-style: italic;
+}
+.testimonial-card__quote {
+  font-style: italic;
+}
+.testimonial-card__author {
+  display: block;
+  margin-top: 1rem;
+  font-style: normal;
+}
+
+.form__group {
+  margin-bottom: 1.5rem;
+}
+.form__label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+.form__input, .form__textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.3rem;
+  font-family: inherit;
+}
+
+/*# sourceMappingURL=estilos.css.map */

@@ -1,0 +1,17 @@
+@use 'variaveis' as v;
+
+@mixin flex-center($direction:row, $justify: center, $align: center){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin responder-para($breakpoint){
+    @if $breakpoint == desktop-sm{
+        @media(max-width: v.$breakpoint-desktop-sm){@content;}
+    }
+    @else if $breakpoint == tablet{
+        @media(max-width: v.$breakpoint-tablet){@content;}
+    }
+}

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design e Desenvolvimento - Wia</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <a href="#home" class="header__link"><span class="header__highlight">Wai</span></a>
+        </div>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="#sobre" class="nav__link">Sobre Wia</a></li>
+                <li class="nav__item"><a href="#servicos" class="nav__link">Serviços</a></li>
+                <li class="nav__item"><a href="#depoimentos" class="nav__link">Depoimentos</a></li>
+                <li class="nav__item"><a href="#contato" class="nav__link">Contato</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero__content">
+            <h1 class="hero__title">Transforme suas ideias em realidade</h1>
+            <p class="hero__text">Design moderno, desenvolvimento de alta performance e branding memorável</p>
+            <a href="#contato"  class="btn btn--primary">Inicie sua ideia</a>
+        </div>
+    </section>
+
+    <section id="sobre" class="about container">
+        <div class="about__content">
+            <h2 class="section-title">Sobre Wia</h2>
+            <p class="about__text">A Wia nasceu com o propósito de inovar no mercado digital. 
+                Unimos criatividade, tecnologia e estratégia para entregar 
+                resultados reais aos nossos clientes. 
+                Nossos valores são pautados na transparência, 
+                inovação constante e foco no usuário </p>
+        </div>
+        <div class="about__image-wrapper">
+            <img
+                src="https://placehold.co/800x600"
+                srcset="https://placehold.co/400x300 400w,
+                        https://placehold.co/800x600 800w,
+                        https://placehold.co/1200x900 1200w"
+                sizes="(max-width: 768px) 100vw, 50vw"
+                alt="Equipe trabalhando em projetos de design digital"
+                class="img-responsive"   
+                >
+        </div>
+    </section>
+
+    <section id="servicos" class="services section--bg-gray">
+        <div class="container">
+            <h2 class="section-title">Nossos Serviços</h2>
+            <div class="services__grid">
+
+                <article class="service-card">
+                    <h3 class="service-card__title">Design Gráfico</h3>
+                    <p class="service-card__text">Criamos identidades visuais impactantes que comunicam a essência da sua marca</p>
+                </article>
+
+                <article class="service-card">
+                    <h3 class="service-card__title">Desenvolvimento web</h3>
+                    <p class="service-card__text">Sites responsivos, rápidos e otimizados para conversão e SEO</p>
+                </article>
+
+                <article class="service-card">
+                    <h3 class="service-card__title">Branding</h3>
+                    <p class="service-card__text">Estratégias completas de posicionamento para destacar sua empresa no mercado</p>
+                </article>
+
+                <article class="service-card">
+                    <h3 class="service-card__title">UI/UX Design</h3>
+                    <p class="service-card__text">Interfaces intuitivas com foco total na melhor experiência do usuário</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="depoimentos" class="testimonials container">
+        <h2 class="section-title">O que dizem nossos clientes</h2>
+        <div class="testimonials__grid">
+
+            <article class="testimonial-card">
+                <blockquote class="testimonial-card__quote">A Wia transformou nossa presença digital. Com o novo site, 
+                    triplicamos nossas vendas e alcançamos resultados que 
+                    superaram todas as expectativas.</blockquote>
+                <cite class="testimonial-card__author">- Maria Silva, CEO da TechInova</cite>
+            </article>
+
+            <article class="testimonial-card">
+                <p class="testimonial-card__quote">Equipe extremamente profissional, comprometida e atenta a 
+                    cada detalhe. Os prazos foram cumpridos à risca, e o 
+                    resultado do branding ficou simplesmente impecável.</p>
+                <strong class="testimonial-card__author">- João Mendes, Caffer</strong>
+            </article>
+        </div>
+    </section>
+
+    <section id="contato" class="contact section--bg-gray">
+        <div class="container contact__wrapper">
+            <div class="contact__info">
+                <h2 class="contact__title">Vamos conversar?</h2>
+                <p class="contact__text">Preencha o formulário ou entre em contato pelos nossos canais diretos</p>
+                <ul class="contact__list">
+                    <li class="contact__item">📍 Av. Brasil, 000 - Região, BR</li>
+                    <li class="contact__item">📞 <a href="tel:(00) 00000-0000">(00) 0 0000-0000</a></li>
+                    <li class="contact__item">✉️ <a href="email:wia@gmail.com">wia@gmail.com</a></li>
+                </ul>
+            </div>
+            <div class="contact__form-wrapper">
+                <form action="#" method="POST" class="form">
+                    <div class="form__group">
+                        <label for="nome" class="form__label">Nome:</label>
+                        <input type="text" id="nome" name="nome" required placeholder="Digite seu nome" class="form__input">
+                    </div>
+
+                    <div class="form__group">
+                        <label for="email" class="form__label">Email:</label>
+                        <input type="email" id="email" name="email" required placeholder="Digite seu email" class="form__input">
+                    </div>
+
+                    <div class="form__group">
+                        <label for="mensagem" class="form__label">Como podemos ajudar?</label>
+                        <textarea id="mensagem" name="mensagem" rows="5" required placeholder="Detalhe seu projeto" class="form__textarea"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn--primary">Enviar Mensagem</button>
+                </form>
+
+            </div>
+
+        </div>
+        
+    </section>
+
+    <footer class="footer">
+        <p class="footer__text">&copy; 2026 Agência Criativa Wai...Todos os direitos reservados</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro do cliente</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="painel">
+        <h2>Informações do cliente</h2>
+        <!--<span class="aviso">Dados do cliente</span>-->
+
+        <form id="usInf">
+            <div class="usGrup">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+            </div>
+
+            <div class="usGrup">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="exemplo@gmail.com" required>
+            </div>
+
+            <div class="exec">
+                <div class="usGrup">
+                    <label for="cep">CEP:</label>
+                    <input type="text" id="cep" name="cep" maxlength="9" placeholder="Apenas números" required>
+                </div>
+                <div class="usGrup">
+                    <label for="estado"> Estado (UF):</label>
+                    <input type="text" id="estado" name="estado" required>
+                </div>
+            </div>
+
+            <div class="usGrup">
+                <label for="cidade">Cidade:</label>
+                <input type="text" id="cidade" name="cidade" required>
+            </div>
+
+             <div class="usGrup">
+                <label for="bairro">Bairro:</label>
+                <input type="text" id="bairro" name="bairro" required>
+            </div>
+
+             <div class="usGrup">
+                <label for="logradouro">Logradouro (Rua, Av):</label>
+                <input type="text" id="logradouro" name="logradouro" required>
+            </div>
+
+            <button type="submit">Concluir</button>
+
+        </form>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

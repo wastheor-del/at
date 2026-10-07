@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbearia Luz</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black border-bottom border-secondary">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center gap-2 fw-bold text-uppercase" href="#home">
+                    <img src="img/logo.png" alt="Barbearia luz" width="40" height="40" class="rounded-circle">
+                    Barbearia Luz
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto text-center">
+                        <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#sobre">Sobre nós</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#depoimentos">Depoimentos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero-section d-flex align-items-center text-center">
+        <div class="container my-5">
+            <h1 class="display-3 fw-bold text-uppercase hero-title">Estilo & Atitude</h1>
+            <p class="lead mb-4 text-light">O visual certo para quem vive no seu próprio ritmo</p>
+            <a href="#contato" class="btn btn-primary btn-lg fw-bold text-uppercase px-4">Agende seu Horário</a>
+        </div>
+    </section>
+
+    <section id="sobre" class="py-5 section-dark-alt">
+        <div class="container py-4">
+            <div class="row align-items-center g-4">
+                <div class="col-md-6">
+                    <img src="img/sobre.jpg" alt="Interior da Barbearia" class="img-fluid rounded shadow-lg border border-secondary">
+                </div>
+                <div class="col-md-6">
+                    <h2 class="h1 fw-bold mb-3 text-primary">Sobre Nós</h2>
+                    <p class="fs-5 text-light">A <strong>Barbearia luz</strong>não é apenas uma barbearia, é um ponto de encontro para quem valoriza a tradição com uma pegada moderna</p>
+                    <p class="text-muted">Nossa missão é oferecer atendimento personalizado, técnicas atualizadas e um ambiente descontraído onde você pode relaxar enquanto cuida do seu visual</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicos" class="py-5">
+        <div class="container py-4">
+            <h2 class="text-center h1 fw-bold mb-5 text-primary">Nossos Serviços</h2>
+            <div class="row g-4">
+
+                <div class="col-md-4">
+                    <div class="card h-100 bg-black text-light border-secondary service-card">
+                        <img src="img/corte.jpg" class="card-img-top" alt="Corte de Cabelo">
+                        <div class="card-body text-center">
+                            <h3 class="card-title h4 text-primary">Corte Masculino</h3>
+                            <p class="card-text text-muted">Do clássico ao moderno(Fade, Undercut). Inclui lavagem e finalização</p>
+                            <span class="badge bg-primary text-dark fs-6 fw-bold">R$ 50,00</span>
+                        </div>
+                    </div>
+                </div>
+            
+
+                <div class="col-md-4">
+                    <div class="card h-100 bg-black text-light border-secondary service-card">
+                        <img src="img/barba.jpg" class="card-img-top" alt="Barba">
+                        <div class="card-body text-center">
+                            <h3 class="card-title h4 text-primary">Barboterapia</h3>
+                            <p class="card-text text-muted">Barba desenhada com toalha quente, óleos essenciais e massagem facial</p>
+                            <span class="badge bg-primary text-dark fs-6 fw-bold">R$ 45,00</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card h-100 bg-black text-light border-secondary service-card">
+                        <img src="img/combo.jpg" class="card-img-top" alt="Combo">
+                        <div class="card-body text-center">
+                            <h3 class="card-title h4 text-primary">Combo completo</h3>
+                            <p class="card-text text-muted">Corte + Barboterapia + Hidratação capilar com desconto exclusivo</p>
+                            <span class="badge bg-primary text-dark fs-6 fw-bold">R$ 85,00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="depoimentos" class="py-5 section-dark-alt">
+        <div class="container py-4">
+            <h2 class="text-center h1 fw-bold mb-5 text-primary">O que dizem os Clientes</h2>
+            <div id="carouselDepoimentos" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner text-center">
+                    <div class="carousel-item active">
+                        <blockquote class="blockquote col-md-8 mx-auto">
+                            <p class="fs-4 text-light">"Atendimento sensacional! O corte ficou exatamente como eu queria e a barboterapia é relaxante demais"</p>
+                            <footer class="blockquote-footer text-primary mt-2">Carlos Eduardo</footer>
+                        </blockquote>
+                    </div>
+
+                    <div class="carousel-item">
+                        <blockquote class="blockquote col-md-8 mx-auto">
+                            <p class="fs-4 text-light">"Ambiente agradável, cerveja gelada e profissionais de altíssimo nível. Não troco por nada"</p>
+                            <footer class="blockquote-footer text-primary mt-2">Lucas Mendes</footer>
+                        </blockquote>
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselDepoimentos" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselDepoimentos" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="py-5">
+        <div class="container py-4">
+            <h2 class="text-center h1 fw-bold mb-5 text-primary">Fale Conosco</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-lg-6">
+                    <form class="bg-black p-4 rounded border border-secondary shadow-lg">
+                        <div class="mb-3">
+                            <label for="nome" class="form-label text-light">Nome</label>
+                            <input type="text" class="form-control bg-dark text-light border-secondary" id="nome" placeholder="Seu nome" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label text-light">Email</label>
+                            <input type="email" class="form-control bg-dark text-light border-secondary" id="email" placeholder="seu@email.com" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensagem" class="form-label text-light">Mensagem</label>
+                            <textarea class="form-control bg-dark text-light border-secondary" id="mensagem" rows="4" placeholder="Como podemos ajudar" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary w-100 fw-bold text-uppercase">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="bg-black text-center text-muted py-3 border-top border-secondary">
+        <p class="mb-0">&copy; 2026 Barbearia Luz. Todos os direitos reservados</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

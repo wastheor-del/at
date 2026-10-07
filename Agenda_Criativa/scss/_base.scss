@@ -1,0 +1,22 @@
+@use 'variaveis' as v;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: v.$fonte-central;
+    color: v.$cor-text;
+    background-color: v.$cor-fundo;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+.img-responsive{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 0.5rem;
+}
